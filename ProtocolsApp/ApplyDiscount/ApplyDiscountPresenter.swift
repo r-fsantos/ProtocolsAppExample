@@ -50,7 +50,7 @@ final class ApplyDiscountPresenter: ApplyDiscountPresenterProtocol {
     func showError(error: ApplyDiscountInteractor.ApplyDiscountError,
                    validRange: (min: Int, max: Int)) {
         switch error {
-        case .invalidnumber:
+        case .invalidNumber:
             viewController?.showError(message: "Informe um número válido")
         case .lessThanMinDiscountValue:
             viewController?.showError(message: "Informe um número maior do que \(validRange.min)")

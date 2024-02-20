@@ -14,7 +14,7 @@ protocol ApplyDiscountInteractorProtocol: AnyObject {
 
 final class ApplyDiscountInteractor: ApplyDiscountInteractorProtocol {
     enum ApplyDiscountError {
-        case invalidnumber
+        case invalidNumber
         case lessThanMinDiscountValue
         case higherThanMaxDiscountValue
     }
@@ -37,7 +37,7 @@ final class ApplyDiscountInteractor: ApplyDiscountInteractorProtocol {
     func applyDiscount(value: String) {
         let validRange = (min: minDiscountValue, maxDiscountValue)
         guard let number = Double(value) else {
-            presenter?.showError(error: .invalidnumber, validRange: validRange)
+            presenter?.showError(error: .invalidNumber, validRange: validRange)
             return
         }
 

@@ -16,6 +16,7 @@
 		889BAEED2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */; };
 		889BAEEF2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */; };
 		889BAEF22B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEF12B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift */; };
+		88EA16E42B851931008F587E /* ApplyDiscountPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA16E32B851931008F587E /* ApplyDiscountPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		885A6A452B85239A00E304B5 /* ProtocolsAppTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ProtocolsAppTests.xctestplan; sourceTree = "<group>"; };
 		889BAEB62B83F118000FCDFF /* ProtocolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889BAEB92B83F118000FCDFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		889BAEBB2B83F118000FCDFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountInteractor.swift; sourceTree = "<group>"; };
 		889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountPresenter.swift; sourceTree = "<group>"; };
 		889BAEF12B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountInteractorTests.swift; sourceTree = "<group>"; };
+		88EA16E32B851931008F587E /* ApplyDiscountPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		889BAECF2B83F119000FCDFF /* ProtocolsAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				885A6A452B85239A00E304B5 /* ProtocolsAppTests.xctestplan */,
 				889BAEF02B84E9E4000FCDFF /* ApplyDiscount */,
 			);
 			path = ProtocolsAppTests;
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				889BAEF12B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift */,
+				88EA16E32B851931008F587E /* ApplyDiscountPresenterTests.swift */,
 			);
 			path = ApplyDiscount;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EA16E42B851931008F587E /* ApplyDiscountPresenterTests.swift in Sources */,
 				889BAEF22B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

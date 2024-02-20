@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "234A181D-FFA7-4273-A18A-920CC7FB40B4",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:ProtocolsApp.xcodeproj",
+          "identifier" : "889BAEB52B83F118000FCDFF",
+          "name" : "ProtocolsApp"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ProtocolsApp.xcodeproj",
+        "identifier" : "889BAECB2B83F119000FCDFF",
+        "name" : "ProtocolsAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

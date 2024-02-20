@@ -12,10 +12,10 @@
 		889BAEBE2B83F118000FCDFF /* ApplyDiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEBD2B83F118000FCDFF /* ApplyDiscountViewController.swift */; };
 		889BAEC32B83F119000FCDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889BAEC22B83F119000FCDFF /* Assets.xcassets */; };
 		889BAEC62B83F119000FCDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889BAEC42B83F119000FCDFF /* LaunchScreen.storyboard */; };
-		889BAED12B83F119000FCDFF /* ProtocolsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAED02B83F119000FCDFF /* ProtocolsAppTests.swift */; };
 		889BAEEB2B83F9CF000FCDFF /* ApplyDiscountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEA2B83F9CF000FCDFF /* ApplyDiscountView.swift */; };
 		889BAEED2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */; };
 		889BAEEF2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */; };
+		889BAEF22B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEF12B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +37,10 @@
 		889BAEC52B83F119000FCDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		889BAEC72B83F119000FCDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889BAECC2B83F119000FCDFF /* ProtocolsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		889BAED02B83F119000FCDFF /* ProtocolsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsAppTests.swift; sourceTree = "<group>"; };
 		889BAEEA2B83F9CF000FCDFF /* ApplyDiscountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountView.swift; sourceTree = "<group>"; };
 		889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountInteractor.swift; sourceTree = "<group>"; };
 		889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountPresenter.swift; sourceTree = "<group>"; };
+		889BAEF12B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		889BAECF2B83F119000FCDFF /* ProtocolsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				889BAED02B83F119000FCDFF /* ProtocolsAppTests.swift */,
+				889BAEF02B84E9E4000FCDFF /* ApplyDiscount */,
 			);
 			path = ProtocolsAppTests;
 			sourceTree = "<group>";
@@ -107,6 +107,14 @@
 				889BAEEA2B83F9CF000FCDFF /* ApplyDiscountView.swift */,
 				889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */,
 				889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */,
+			);
+			path = ApplyDiscount;
+			sourceTree = "<group>";
+		};
+		889BAEF02B84E9E4000FCDFF /* ApplyDiscount */ = {
+			isa = PBXGroup;
+			children = (
+				889BAEF12B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift */,
 			);
 			path = ApplyDiscount;
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 					};
 					889BAECB2B83F119000FCDFF = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 889BAEB52B83F118000FCDFF;
 					};
 				};
@@ -224,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889BAED12B83F119000FCDFF /* ProtocolsAppTests.swift in Sources */,
+				889BAEF22B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +432,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YXQS68D56Q;
@@ -432,6 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.renato.ProtocolsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtocolsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProtocolsApp";
@@ -443,6 +454,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YXQS68D56Q;

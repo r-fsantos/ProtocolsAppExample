@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		889BAEBA2B83F118000FCDFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEB92B83F118000FCDFF /* AppDelegate.swift */; };
 		889BAEBC2B83F118000FCDFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEBB2B83F118000FCDFF /* SceneDelegate.swift */; };
-		889BAEBE2B83F118000FCDFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEBD2B83F118000FCDFF /* ViewController.swift */; };
+		889BAEBE2B83F118000FCDFF /* ApplyDiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEBD2B83F118000FCDFF /* ApplyDiscountViewController.swift */; };
 		889BAEC32B83F119000FCDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889BAEC22B83F119000FCDFF /* Assets.xcassets */; };
 		889BAEC62B83F119000FCDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889BAEC42B83F119000FCDFF /* LaunchScreen.storyboard */; };
 		889BAED12B83F119000FCDFF /* ProtocolsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAED02B83F119000FCDFF /* ProtocolsAppTests.swift */; };
+		889BAEEB2B83F9CF000FCDFF /* ApplyDiscountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEA2B83F9CF000FCDFF /* ApplyDiscountView.swift */; };
+		889BAEED2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */; };
+		889BAEEF2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,12 +32,15 @@
 		889BAEB62B83F118000FCDFF /* ProtocolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889BAEB92B83F118000FCDFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		889BAEBB2B83F118000FCDFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		889BAEBD2B83F118000FCDFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		889BAEBD2B83F118000FCDFF /* ApplyDiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountViewController.swift; sourceTree = "<group>"; };
 		889BAEC22B83F119000FCDFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		889BAEC52B83F119000FCDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		889BAEC72B83F119000FCDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889BAECC2B83F119000FCDFF /* ProtocolsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889BAED02B83F119000FCDFF /* ProtocolsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsAppTests.swift; sourceTree = "<group>"; };
+		889BAEEA2B83F9CF000FCDFF /* ApplyDiscountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountView.swift; sourceTree = "<group>"; };
+		889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountInteractor.swift; sourceTree = "<group>"; };
+		889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +82,9 @@
 		889BAEB82B83F118000FCDFF /* ProtocolsApp */ = {
 			isa = PBXGroup;
 			children = (
+				889BAEE92B83F444000FCDFF /* ApplyDiscount */,
 				889BAEB92B83F118000FCDFF /* AppDelegate.swift */,
 				889BAEBB2B83F118000FCDFF /* SceneDelegate.swift */,
-				889BAEBD2B83F118000FCDFF /* ViewController.swift */,
 				889BAEC22B83F119000FCDFF /* Assets.xcassets */,
 				889BAEC42B83F119000FCDFF /* LaunchScreen.storyboard */,
 				889BAEC72B83F119000FCDFF /* Info.plist */,
@@ -92,6 +98,17 @@
 				889BAED02B83F119000FCDFF /* ProtocolsAppTests.swift */,
 			);
 			path = ProtocolsAppTests;
+			sourceTree = "<group>";
+		};
+		889BAEE92B83F444000FCDFF /* ApplyDiscount */ = {
+			isa = PBXGroup;
+			children = (
+				889BAEBD2B83F118000FCDFF /* ApplyDiscountViewController.swift */,
+				889BAEEA2B83F9CF000FCDFF /* ApplyDiscountView.swift */,
+				889BAEEC2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift */,
+				889BAEEE2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift */,
+			);
+			path = ApplyDiscount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889BAEBE2B83F118000FCDFF /* ViewController.swift in Sources */,
+				889BAEEB2B83F9CF000FCDFF /* ApplyDiscountView.swift in Sources */,
+				889BAEBE2B83F118000FCDFF /* ApplyDiscountViewController.swift in Sources */,
 				889BAEBA2B83F118000FCDFF /* AppDelegate.swift in Sources */,
 				889BAEBC2B83F118000FCDFF /* SceneDelegate.swift in Sources */,
+				889BAEEF2B84D6A2000FCDFF /* ApplyDiscountPresenter.swift in Sources */,
+				889BAEED2B84CF7B000FCDFF /* ApplyDiscountInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

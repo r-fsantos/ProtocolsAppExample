@@ -73,7 +73,6 @@ final class ApplyDiscountPresenterSpy: ApplyDiscountPresenterProtocol {
         case showError
     }
 
-    // MARK: - What da heck? [Methods()]
     private (set) var calledMethods: [Methods] = []
 
     func showProductInfo(name: String, price: Double, minDiscountValue: Int, maxDiscountValue: Int) {

@@ -21,9 +21,9 @@ final class ApplyDiscountInteractor: ApplyDiscountInteractorProtocol {
 
     var presenter: ApplyDiscountPresenterProtocol?
 
+    // TODO: Abstract this properties to a Product Model and inject it
     let minDiscountValue: Int = 1
     let maxDiscountValue: Int = 30
-
     let productName: String = "Mackbook Pro"
     let productPrice: Double = 12000
 

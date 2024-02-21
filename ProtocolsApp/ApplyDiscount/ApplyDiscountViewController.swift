@@ -14,7 +14,7 @@ protocol ApplyDiscountViewControllerProtocol: AnyObject {
 }
 
 final class ApplyDiscountViewController: UIViewController {
-    var interactor: ApplyDiscountInteractor?
+    var interactor: ApplyDiscountInteractorProtocol?
 
     // MARK: - Private properties
     private lazy var applyDiscountView: UIView & ApplyDiscountViewInputProtocol = {

@@ -14,12 +14,12 @@ protocol ApplyDiscountViewInputProtocol {
     func showErrorMessage(message: String)
 }
 
-protocol ApplyDiscountViewOutputProtocol {
+protocol ApplyDiscountViewOutputProtocol: AnyObject {
     func applyDiscount(value: String)
 }
 
 final class ApplyDiscountView: UIView {
-    var delegate: ApplyDiscountViewOutputProtocol?
+    weak var delegate: ApplyDiscountViewOutputProtocol?
 
     // MARK: - Private properties
     private lazy var stackView: UIStackView = {

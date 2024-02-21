@@ -43,7 +43,7 @@ final class ApplyDiscountPresenter: ApplyDiscountPresenterProtocol {
         let formatter = NumberFormatter()
         formatter.locale = Locale.current
         formatter.numberStyle = .currency
-        let message = "\(name)\nde: \(String(describing: formatter.string(from: NSNumber(value: price))))\npor: \(String(describing: formatter.string(from: NSNumber(value: priceWithDiscount))))"
+        let message = "\(name)\nde: \(String(describing: (formatter.string(from: NSNumber(value: price)) ?? "")))\npor: \(String(describing: formatter.string(from: NSNumber(value: priceWithDiscount)) ?? ""))"
         viewController?.showDiscount(message: message)
     }
 

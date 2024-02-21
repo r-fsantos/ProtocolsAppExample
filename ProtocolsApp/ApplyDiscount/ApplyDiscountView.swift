@@ -18,7 +18,6 @@ protocol ApplyDiscountViewOutputProtocol {
     func applyDiscount(value: String)
 }
 
-
 final class ApplyDiscountView: UIView {
     var delegate: ApplyDiscountViewOutputProtocol?
 
@@ -128,7 +127,6 @@ final class ApplyDiscountView: UIView {
         stackView.setCustomSpacing(40, after: infoLabel)
     }
 }
-
 
 extension ApplyDiscountView: ApplyDiscountViewInputProtocol {
     func setProductLabel(text: String) {

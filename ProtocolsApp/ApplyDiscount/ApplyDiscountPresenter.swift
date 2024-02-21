@@ -30,7 +30,7 @@ final class ApplyDiscountPresenter: ApplyDiscountPresenterProtocol {
         formatter.locale = Locale.current
         formatter.numberStyle = .currency
 
-        let productText = "\(name)\n\(String(describing: formatter.string(from: NSNumber(value: price))))"
+        let productText = "\(name)\n\(String(describing: formatter.string(from: NSNumber(floatLiteral: price)) ?? ""))"
         let discountInfoText = "Informe um valor entre \(minDiscountValue) e \(maxDiscountValue)"
 
         viewController?.showProductInfo(product: productText,
@@ -43,7 +43,7 @@ final class ApplyDiscountPresenter: ApplyDiscountPresenterProtocol {
         let formatter = NumberFormatter()
         formatter.locale = Locale.current
         formatter.numberStyle = .currency
-        let message = "\(name)\nde: \(String(describing: (formatter.string(from: NSNumber(value: price)) ?? "")))\npor: \(String(describing: formatter.string(from: NSNumber(value: priceWithDiscount)) ?? ""))"
+        let message = "\(name)\nde: \(String(describing: formatter.string(from: NSNumber(floatLiteral: price)) ?? ""))\npor: \(String(describing: formatter.string(from: NSNumber(floatLiteral: priceWithDiscount)) ?? ""))"
         viewController?.showDiscount(message: message)
     }
 

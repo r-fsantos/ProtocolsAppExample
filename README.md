@@ -2,6 +2,13 @@
 
 App to practice Protocols implementation and review VIP Architectural Design Pattern.
 
+## Business Rule
+
+Simply calculates and apply a discount to a product based on a specific range.
+For the v1, the product and its price, as the valid discount range are hard coded.
+This was done mainly for the sake of simplicity, since the main goals of the was
+practicing Protocol Orientend Programming and VIP implementation.
+
 ## Key points of the project
 
 Extensive practice of the following points:

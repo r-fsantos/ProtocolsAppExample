@@ -96,6 +96,7 @@ final class ApplyDiscountView: UIView {
         buildViewHierarchy()
         setupConstraints()
         setupAdditionalConfiguration()
+        setupTagGestureRecognizer()
     }
 
     required init?(coder: NSCoder) {
@@ -125,6 +126,15 @@ final class ApplyDiscountView: UIView {
     private func setupAdditionalConfiguration() {
         stackView.setCustomSpacing(4, after: valueTextField)
         stackView.setCustomSpacing(40, after: infoLabel)
+    }
+
+    private func setupTagGestureRecognizer() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        addGestureRecognizer(tap)
+    }
+
+    @objc private func dismissKeyboard() {
+        endEditing(true)
     }
 }
 

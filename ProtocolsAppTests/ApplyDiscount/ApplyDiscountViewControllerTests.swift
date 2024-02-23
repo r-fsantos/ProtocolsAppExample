@@ -51,7 +51,6 @@ final class ApplyDiscountViewControllerTests: XCTestCase {
     }
 }
 
-
 final class ApplyDiscountInteractorSpy: ApplyDiscountInteractorProtocol {
     enum Methods {
         case didLoad

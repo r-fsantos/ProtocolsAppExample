@@ -25,8 +25,8 @@ Project heavely inspired on [Commitando Youtube channel](https://www.youtube.com
 
 ## TODOs:
 
-- [ ] Usability
-  - [ ] Adds tap gesture to dismiss keyboard when tapping outside of it
+- [x] Usability
+  - [x] Adds tap gesture to dismiss keyboard when tapping outside of it
 - [ ] `ApplyDiscountPresenter`
   - [ ] Apply I and D SOLID principles to NumberFormatter
   - [ ] Refactor unit tests

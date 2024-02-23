@@ -86,6 +86,7 @@ final class ApplyDiscountView: UIView {
 
     // MARK: - Actions
     @objc func didTapButton() {
+        dismissKeyboard()
         delegate?.applyDiscount(value: valueTextField.text ?? "0")
     }
 

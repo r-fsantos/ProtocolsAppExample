@@ -17,12 +17,7 @@ final class ApplyDiscountViewController: UIViewController {
     var interactor: ApplyDiscountInteractorProtocol?
 
     // MARK: - Private properties
-    private lazy var applyDiscountView: UIView & ApplyDiscountViewInputProtocol = {
-        let element = ApplyDiscountView()
-        element.delegate = self
-        element.translatesAutoresizingMaskIntoConstraints = true
-        return element
-    }()
+    private var applyDiscountView: ApplyDiscountViewPresentable
 
     // MARK: - View lifecycle
     override func viewDidLoad() {
@@ -38,8 +33,9 @@ final class ApplyDiscountViewController: UIViewController {
     }
 
     // MARK: - Object lifecycle
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    init(applyDiscountView: ApplyDiscountViewPresentable = ApplyDiscountView()) {
+        self.applyDiscountView = applyDiscountView
+        super.init(nibName: nil, bundle: nil)
         setup()
     }
 
@@ -49,6 +45,8 @@ final class ApplyDiscountViewController: UIViewController {
 
     // MARK: - Setup
     private func setup() {
+        applyDiscountView.delegate = self
+
         let viewController = self
         let interactor = ApplyDiscountInteractor()
         let presenter = ApplyDiscountPresenter()

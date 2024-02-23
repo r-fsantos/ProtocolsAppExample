@@ -8,6 +8,7 @@
 import UIKit
 
 protocol ApplyDiscountViewInputProtocol {
+    var delegate: ApplyDiscountViewOutputProtocol? { get set }
     func setProductLabel(text: String)
     func setInfoLabel(text: String)
     func showPriceWithDiscount(message: String)
@@ -17,6 +18,8 @@ protocol ApplyDiscountViewInputProtocol {
 protocol ApplyDiscountViewOutputProtocol: AnyObject {
     func applyDiscount(value: String)
 }
+
+typealias ApplyDiscountViewPresentable = UIView & ApplyDiscountViewInputProtocol
 
 final class ApplyDiscountView: UIView {
     weak var delegate: ApplyDiscountViewOutputProtocol?

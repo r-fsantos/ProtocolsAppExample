@@ -32,12 +32,12 @@ Project heavely inspired on [Commitando Youtube channel](https://www.youtube.com
   - [ ] Refactor unit tests
 - [ ] Refactor protocols naming to improve readability
 - [ ] Creates localizable strings
-- [ ] `ApplyDiscountView`
+- [x] `ApplyDiscountView`
   - [x] ~Creates protocol~ Replaced by a `typealias`
   - [x] Inject reference at At `ApplyDiscountViewController`
   - [x] Refactor unit tests
 - [ ] `ApplyDiscountViewController`
-  - [ ] Apply refactor of `ApplyDiscountView`
+  - [x] Apply refactor of `ApplyDiscountView`
   - [ ] Apply D from SOLID principles to interactor and presenter dependencies
 - [ ] Modeling
   - [ ] Abstract `Product`, maybe `Discount` too

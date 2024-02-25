@@ -70,20 +70,3 @@ final class ApplyDiscountViewControllerTests: XCTestCase {
         return controller
     }
 }
-
-final class ApplyDiscountInteractorSpy: ApplyDiscountInteractorProtocol {
-    enum Methods {
-        case didLoad
-        case applyDiscount
-    }
-
-    private (set) var calledMethods: [Methods] = []
-
-    func didLoad() {
-        calledMethods.append(.didLoad)
-    }
-
-    func applyDiscount(value: String) {
-        calledMethods.append(.applyDiscount)
-    }
-}

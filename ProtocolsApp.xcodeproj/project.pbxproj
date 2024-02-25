@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		884EF9C82B88FC5A00446716 /* ApplyDiscountViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884EF9C72B88FC5A00446716 /* ApplyDiscountViewSpy.swift */; };
+		884EF9CB2B8B9B6900446716 /* ApplyDiscountInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884EF9CA2B8B9B6900446716 /* ApplyDiscountInteractorSpy.swift */; };
+		884EF9CD2B8B9BB500446716 /* ApplyDiscountPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884EF9CC2B8B9BB500446716 /* ApplyDiscountPresenterSpy.swift */; };
+		884EF9CF2B8B9C6700446716 /* ApplyDiscountViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884EF9CE2B8B9C6700446716 /* ApplyDiscountViewControllerSpy.swift */; };
 		885A6A472B85315D00E304B5 /* ApplyDiscountViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A6A462B85315D00E304B5 /* ApplyDiscountViewControllerTests.swift */; };
 		889BAEBA2B83F118000FCDFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEB92B83F118000FCDFF /* AppDelegate.swift */; };
 		889BAEBC2B83F118000FCDFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BAEBB2B83F118000FCDFF /* SceneDelegate.swift */; };
@@ -34,6 +37,9 @@
 /* Begin PBXFileReference section */
 		884EF9C72B88FC5A00446716 /* ApplyDiscountViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountViewSpy.swift; sourceTree = "<group>"; };
 		884EF9C92B8B93A200446716 /* ProtocolsApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ProtocolsApp.xctestplan; sourceTree = "<group>"; };
+		884EF9CA2B8B9B6900446716 /* ApplyDiscountInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountInteractorSpy.swift; sourceTree = "<group>"; };
+		884EF9CC2B8B9BB500446716 /* ApplyDiscountPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountPresenterSpy.swift; sourceTree = "<group>"; };
+		884EF9CE2B8B9C6700446716 /* ApplyDiscountViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountViewControllerSpy.swift; sourceTree = "<group>"; };
 		885A6A452B85239A00E304B5 /* ProtocolsAppTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ProtocolsAppTests.xctestplan; sourceTree = "<group>"; };
 		885A6A462B85315D00E304B5 /* ApplyDiscountViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyDiscountViewControllerTests.swift; sourceTree = "<group>"; };
 		889BAEB62B83F118000FCDFF /* ProtocolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				884EF9C72B88FC5A00446716 /* ApplyDiscountViewSpy.swift */,
+				884EF9CA2B8B9B6900446716 /* ApplyDiscountInteractorSpy.swift */,
+				884EF9CC2B8B9BB500446716 /* ApplyDiscountPresenterSpy.swift */,
+				884EF9CE2B8B9C6700446716 /* ApplyDiscountViewControllerSpy.swift */,
 			);
 			path = TestDoubles;
 			sourceTree = "<group>";
@@ -256,7 +265,10 @@
 			files = (
 				88EA16E42B851931008F587E /* ApplyDiscountPresenterTests.swift in Sources */,
 				889BAEF22B84EA32000FCDFF /* ApplyDiscountInteractorTests.swift in Sources */,
+				884EF9CB2B8B9B6900446716 /* ApplyDiscountInteractorSpy.swift in Sources */,
+				884EF9CD2B8B9BB500446716 /* ApplyDiscountPresenterSpy.swift in Sources */,
 				884EF9C82B88FC5A00446716 /* ApplyDiscountViewSpy.swift in Sources */,
+				884EF9CF2B8B9C6700446716 /* ApplyDiscountViewControllerSpy.swift in Sources */,
 				885A6A472B85315D00E304B5 /* ApplyDiscountViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

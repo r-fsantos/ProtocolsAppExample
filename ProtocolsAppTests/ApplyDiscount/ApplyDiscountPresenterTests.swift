@@ -63,25 +63,3 @@ final class ApplyDiscountPresenterTests: XCTestCase {
         return presenter
     }
 }
-
-final class ApplyDiscountViewControllerSpy: ApplyDiscountViewControllerProtocol {
-    enum Methods {
-        case showProductInfo
-        case showDiscount
-        case showError
-    }
-
-    private (set) var calledMethods: [Methods] = []
-
-    func showProductInfo(product: String, discountInfo: String) {
-        calledMethods.append(.showProductInfo)
-    }
-
-    func showDiscount(message: String) {
-        calledMethods.append(.showDiscount)
-    }
-
-    func showError(message: String) {
-        calledMethods.append(.showError)
-    }
-}

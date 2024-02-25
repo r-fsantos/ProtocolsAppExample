@@ -33,9 +33,9 @@ Project heavely inspired on [Commitando Youtube channel](https://www.youtube.com
 - [ ] Refactor protocols naming to improve readability
 - [ ] Creates localizable strings
 - [ ] `ApplyDiscountView`
-  - [ ] Creates protocol
-  - [ ] Inject reference at At `ApplyDiscountViewController`
-  - [ ] Refactor unit tests
+  - [x] ~Creates protocol~ Replaced by a `typealias`
+  - [x] Inject reference at At `ApplyDiscountViewController`
+  - [x] Refactor unit tests
 - [ ] `ApplyDiscountViewController`
   - [ ] Apply refactor of `ApplyDiscountView`
   - [ ] Apply D from SOLID principles to interactor and presenter dependencies

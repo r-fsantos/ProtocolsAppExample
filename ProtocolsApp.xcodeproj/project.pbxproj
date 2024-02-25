@@ -111,6 +111,7 @@
 		889BAECF2B83F119000FCDFF /* ProtocolsAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				884EF9C92B8B93A200446716 /* ProtocolsApp.xctestplan */,
 				885A6A452B85239A00E304B5 /* ProtocolsAppTests.xctestplan */,
 				889BAEF02B84E9E4000FCDFF /* ApplyDiscount */,
 			);

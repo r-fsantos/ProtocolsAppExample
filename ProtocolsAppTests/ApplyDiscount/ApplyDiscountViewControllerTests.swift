@@ -13,6 +13,7 @@ final class ApplyDiscountViewControllerTests: XCTestCase {
 
     private var sut: ApplyDiscountViewController!
     private let interactorSpy = ApplyDiscountInteractorSpy()
+    private let applyDiscountViewSpy = ApplyDiscountViewSpy()
 
     override func setUp() {
         sut = makeSUT()
@@ -33,19 +34,38 @@ final class ApplyDiscountViewControllerTests: XCTestCase {
         XCTAssertEqual(interactorSpy.calledMethods, [.didLoad])
     }
 
-    func test_WhenUserTapButtonOnView_ShouldCallApplyDiscountOnViewController() {
+    func test_WhenViewIsLoaded_ShouldCallDidLoadOnView() {
         sut.loadViewIfNeeded()
 
-        let stackView = sut.view.subviews.first
-        let button = stackView?.subviews.first { $0.isKind(of: UIButton.self) } as? UIButton
+        XCTAssertEqual(interactorSpy.calledMethods, [.didLoad])
+    }
 
-        button?.sendActions(for: .touchUpInside)
+    func test_WhenCallApplyDiscount_ShouldCallApplyDiscountOnViewController() {
+        sut.applyDiscount(value: "")
 
-        XCTAssertEqual(interactorSpy.calledMethods, [.didLoad, .applyDiscount])
+        XCTAssertEqual(interactorSpy.calledMethods, [.applyDiscount])
+    }
+
+    func test_WhenCallShowProductInfo_ShouldCallShowProductInfoOnView() {
+        sut.showProductInfo(product: "", discountInfo: "")
+
+        XCTAssertEqual(applyDiscountViewSpy.calledMethods, [.setProductLabel, .setInfoLabel])
+    }
+
+    func test_WhenCallShowDiscount_ShouldCallShowPriceWithDiscountOnView() {
+        sut.showDiscount(message: "")
+
+        XCTAssertEqual(applyDiscountViewSpy.calledMethods, [.showPriceWithDiscount])
+    }
+
+    func test_WhenCallShowError_ShouldCallShowErrorOnView() {
+        sut.showError(message: "")
+
+        XCTAssertEqual(applyDiscountViewSpy.calledMethods, [.showErrorMessage])
     }
 
     private func makeSUT() -> SUT {
-        let controller = ApplyDiscountViewController()
+        let controller = ApplyDiscountViewController(applyDiscountView: applyDiscountViewSpy)
         controller.interactor = interactorSpy
         return controller
     }
